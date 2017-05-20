@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "203346374943",
+    "firebase_url": "https://reminder-by-location.firebaseio.com",
+    "project_id": "reminder-by-location",
+    "storage_bucket": "reminder-by-location.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203346374943:android:a458d7973f23f7bc",
+        "android_client_info": {
+          "package_name": "com.etibis.reminderbylocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203346374943-h3s336rp1lhs9toc6uvsgf5fbsncruq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.etibis.reminderbylocation",
+            "certificate_hash": "3bf51ca7bec7c2ce5e496df6567994c3f6a809be"
+          }
+        },
+        {
+          "client_id": "203346374943-c9bb57sk85085jcfduuunnqk1cjel4hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1MUGzujhHZIdK_Pow6r_MAIwMMgAE2WQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203346374943-c9bb57sk85085jcfduuunnqk1cjel4hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
