@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -21,6 +22,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
+    private static final String TAG = "Reminder By Location";
     private AppCompatActivity mActivity;
 
     @Override
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == ResultCodes.OK) {
                 //startActivity(SignedInActivity.createIntent(this, response));
                 showSnackbar(R.string.sign_in_successful);
+                Log.d(TAG, getString(R.string.sign_in_successful));
                 //finish();
                 return;
             } else {
@@ -84,21 +87,25 @@ public class MainActivity extends AppCompatActivity {
                 if (response == null) {
                     // User pressed back button
                     showSnackbar(R.string.sign_in_cancelled);
+                    Log.d(TAG, getString(R.string.sign_in_cancelled));
                     return;
                 }
 
                 if (response.getErrorCode() == ErrorCodes.NO_NETWORK) {
                     showSnackbar(R.string.no_internet_connection);
+                    Log.d(TAG, getString(R.string.no_internet_connection));
                     return;
                 }
 
                 if (response.getErrorCode() == ErrorCodes.UNKNOWN_ERROR) {
                     showSnackbar(R.string.unknown_error);
+                    Log.d(TAG, getString(R.string.unknown_error));
                     return;
                 }
             }
 
             showSnackbar(R.string.unknown_error);
+            Log.d(TAG, getString(R.string.unknown_error));
         }
     }
 

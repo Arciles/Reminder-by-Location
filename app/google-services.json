@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "203346374943-qcign6qo2ctc6eeu04ikjtve9aoafr56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.etibis.reminderbylocation",
+            "certificate_hash": "a1686066271a92fa42b7c903ba96454aacf09b69"
+          }
+        },
+        {
           "client_id": "203346374943-h3s336rp1lhs9toc6uvsgf5fbsncruq1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
