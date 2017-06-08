@@ -26,6 +26,6 @@ android:
       - 'google-gdk-license-.+'
 
   before_install:
+    - bash .travis-android-license-bugfix.sh
     - chmod +x ./gradlew
     - ./gradlew dependencies || true
-    - bash .travis-android-license-bugfix.sh
