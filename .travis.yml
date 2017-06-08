@@ -20,4 +20,4 @@ android:
     - addon-google_apis-google-19
 
   before_install:
-    - chmod +x gradlew
+    - chmod +x ./gradlew
