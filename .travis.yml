@@ -27,3 +27,4 @@ android:
 
   before_install:
     - chmod +x ./gradlew
+    - bash .travis-android-license-bugfix.sh
