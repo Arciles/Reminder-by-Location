@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                     new AuthUI.IdpConfig.Builder(AuthUI.FACEBOOK_PROVIDER).build(),
                                     new AuthUI.IdpConfig.Builder(AuthUI.TWITTER_PROVIDER).build()))
                             .setIsSmartLockEnabled(!BuildConfig.DEBUG) // disables the smart lock in development environment
+                            .setTheme(R.style.GreenTheme)
                             .build(),
                     RC_SIGN_IN);
         }
